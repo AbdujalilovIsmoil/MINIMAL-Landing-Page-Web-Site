@@ -49,6 +49,8 @@ window.addEventListener("DOMContentLoaded", () => {
   let secretImages = document.querySelector(".secret__img");
   let images = document.querySelectorAll(".section__third_img_box_img");
   let secretText = document.querySelector(".secret__text");
+  let secretTextName = document.querySelector(".secret__text_name");
+  let sectionTitle = document.querySelectorAll(".section__third_img_box_title");
 
   function showSecretImg() {
     secret.style.display = "block";
@@ -66,11 +68,12 @@ window.addEventListener("DOMContentLoaded", () => {
     showNavbar();
   }
 
-  images.forEach((img, index) => {
+  images.forEach((img, index,array) => {
+    console.log(array);
     img.addEventListener("click", () => {
       showSecretImg();
       secretImages.src = img.getAttribute("src");
-      secretText.innerHTML = `0/${1 + index}`;
+      secretText.innerHTML = `0${1 + index}/09`;
     });
   });
 
