@@ -86,4 +86,7 @@ window.addEventListener("DOMContentLoaded", () => {
       hideSecretImg();
     }
   });
+
+  // AOS
+  AOS.init();
 });
