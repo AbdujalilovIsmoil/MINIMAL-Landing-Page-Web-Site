@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
     showNavbar();
   }
 
-  images.forEach((img, index,array) => {
+  images.forEach((img, index, array) => {
     console.log(array);
     img.addEventListener("click", () => {
       showSecretImg();
