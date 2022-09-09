@@ -50,8 +50,8 @@ body.active {
 
 .container {
   margin: 0 auto;
-  width: 100%;
   max-width: 1440px;
+  width: 100%;
   padding: 0 100px;
   overflow-x: hidden;
 }
@@ -569,6 +569,7 @@ body.active {
   display: none;
 }
 
+
 .secret__text {
   color: var(--footer-color);
   font-family: 'Montserrat';
@@ -866,6 +867,8 @@ body.active {
   border: 1px solid var(--footer-bg-link-color);
   border-bottom: 2px solid var(--footer-bg-link-color);
   margin: 25px 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .footer__box_form_paragraph {

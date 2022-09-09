@@ -1,5 +1,5 @@
 // JAVASCRIPT TO THE CODES
-window.addEventListener("DOMContentLoaded", () => {
+this.addEventListener("DOMContentLoaded", () => {
   let faBars = document.querySelector(".fa-bars");
   let times = document.querySelector(".fa-times");
   let navbar = document.querySelector(".new__nav");
@@ -49,8 +49,6 @@ window.addEventListener("DOMContentLoaded", () => {
   let secretImages = document.querySelector(".secret__img");
   let images = document.querySelectorAll(".section__third_img_box_img");
   let secretText = document.querySelector(".secret__text");
-  let secretTextName = document.querySelector(".secret__text_name");
-  let sectionTitle = document.querySelectorAll(".section__third_img_box_title");
 
   function showSecretImg() {
     secret.style.display = "block";
